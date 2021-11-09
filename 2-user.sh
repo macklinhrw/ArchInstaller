@@ -42,7 +42,6 @@ PKGS=(
 'plasma-pa'
 'ocs-url' # install packages from websites
 'sddm-nordic-theme-git'
-'timeshift'
 'ttf-droid'
 'ttf-hack'
 'ttf-meslo' # Nerdfont package
@@ -63,6 +62,7 @@ done
 
 export PATH=$PATH:~/.local/bin
 cp -r $HOME/ArchTitus/dotfiles/* $HOME/.config/
+# install vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 pip install konsave
