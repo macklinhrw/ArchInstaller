@@ -47,7 +47,7 @@ PKGS=(
 'ttf-meslo' # Nerdfont package
 'ttf-roboto'
 'zoom' # video conferences
-'snap-pac'
+'timeshift-autosnap'
 # my packages
 'neovim-nightly-bin'
 'discord'
@@ -58,6 +58,8 @@ PKGS=(
 'flameshot'
 'nodejs'
 'npm'
+# neovim setup
+'tree-sitter'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -77,6 +79,9 @@ npm install -g yarn
 npm install -g typescript-language-server
 npm install -g @tailwindcss/language-server
 npm install -g diagnostic-languageserver
+
+# remember git credentials (WARNING: security risk)
+git config --global credential.helper store
 
 pip install konsave
 konsave -i $HOME/ArchTitus/kde.knsv
