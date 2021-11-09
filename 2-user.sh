@@ -49,6 +49,7 @@ PKGS=(
 'zoom' # video conferences
 'snap-pac'
 # my packages
+'discord'
 'caprine'
 'foliate'
 'obsidian'
