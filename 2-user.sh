@@ -49,12 +49,15 @@ PKGS=(
 'zoom' # video conferences
 'snap-pac'
 # my packages
+'neovim-nightly-bin'
 'discord'
 'caprine'
 'foliate'
 'obsidian'
 'libreoffice'
 'flameshot'
+'nodejs'
+'npm'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -63,9 +66,18 @@ done
 
 export PATH=$PATH:~/.local/bin
 cp -r $HOME/ArchTitus/dotfiles/* $HOME/.config/
+
 # install vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# install npm packages
+npm install -g yarn
+# language servers for neovim lsp-config
+npm install -g typescript-language-server
+npm install -g @tailwindcss/language-server
+npm install -g diagnostic-languageserver
+
 pip install konsave
 konsave -i $HOME/ArchTitus/kde.knsv
 sleep 1
