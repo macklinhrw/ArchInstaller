@@ -49,6 +49,7 @@ PKGS=(
 'zoom' # video conferences
 'timeshift-autosnap'
 # my packages
+'pycharm-community-eap'
 'neovim-nightly-bin'
 'discord'
 'caprine'
