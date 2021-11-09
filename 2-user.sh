@@ -42,13 +42,19 @@ PKGS=(
 'plasma-pa'
 'ocs-url' # install packages from websites
 'sddm-nordic-theme-git'
-'snapper-gui-git'
+'timeshift'
 'ttf-droid'
 'ttf-hack'
 'ttf-meslo' # Nerdfont package
 'ttf-roboto'
 'zoom' # video conferences
 'snap-pac'
+# my packages
+'caprine'
+'foliate'
+'obsidian'
+'libreoffice'
+'flameshot'
 )
 
 for PKG in "${PKGS[@]}"; do
