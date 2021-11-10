@@ -52,6 +52,7 @@ PKGS=(
 'pycharm-community-eap'
 'neovim-nightly-bin'
 'discord'
+'slack-desktop'
 'caprine'
 'foliate'
 'obsidian'
