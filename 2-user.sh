@@ -85,8 +85,11 @@ npm install -g typescript-language-server
 npm install -g @tailwindcss/language-server
 npm install -g diagnostic-languageserver
 
+# setup GIT
 # remember git credentials (WARNING: security risk)
 git config --global credential.helper store
+git config --glboal user.name "macklinhrw"
+git config --global user.email "macklingaming@gmail.com"
 
 # symbolic link to nvim for vim command
 ln -s /usr/bin/nvim /usr/local/bin/vim
