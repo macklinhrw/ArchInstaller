@@ -94,6 +94,9 @@ git config --global user.email "macklingaming@gmail.com"
 # symbolic link to nvim for vim command
 ln -s /usr/bin/nvim /usr/local/bin/vim
 
+# Install nvim vim-plug plugins
+vim +PlugInstall +q +q
+
 pip install konsave
 konsave -i $HOME/ArchTitus/kde.knsv
 sleep 1
