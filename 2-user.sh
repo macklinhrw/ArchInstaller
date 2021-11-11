@@ -58,10 +58,12 @@ PKGS=(
 'obsidian'
 'libreoffice'
 'flameshot'
+'xournalpp'
 'nodejs'
 'npm'
 # neovim setup
 'tree-sitter'
+'xclip'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -71,8 +73,9 @@ done
 export PATH=$PATH:~/.local/bin
 cp -r $HOME/ArchTitus/dotfiles/* $HOME/.config/
 
-# clone nvim dotfiles
+# clone dotfiles from repos
 git clone https://github.com/macklinhrw/nvim $HOME/.config
+git clone https://github.com/macklinhrw/kitty $HOME/.config
 
 # install vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
