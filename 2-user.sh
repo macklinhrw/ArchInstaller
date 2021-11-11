@@ -59,6 +59,7 @@ PKGS=(
 'libreoffice'
 'flameshot'
 'xournalpp'
+'insomnia'
 'nodejs'
 'npm'
 # neovim setup
